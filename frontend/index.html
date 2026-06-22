@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RentaFácil - Gestión de Flota</title>
+</head>
+
+<body>
+    <h1>RentaFácil - Sistema de Flota</h1>
+
+    <div>
+        <h3>Registrar Nuevo Vehículo</h3>
+        <input type="text" id="modelo" placeholder="Modelo (ej: Toyota Corolla)">
+        <input type="text" id="categoria" placeholder="Categoría (ej: Sedán)">
+        <input type="number" id="precio" placeholder="Precio por día">
+        <input type="number" id="unidades" placeholder="Unidades disponibles">
+        <button onclick="guardarVehiculo()">Guardar Vehículo</button>
+    </div>
+
+    <hr>
+
+    <h3>Lista de Vehículos</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Modelo</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+                <th>Unidades</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-vehiculos"></tbody>
+    </table>
+
+    <script src="scrip.js"></script>
+</body>
+
+</html>
